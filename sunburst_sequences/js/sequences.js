@@ -13,21 +13,21 @@ var b = {
 
 // Mapping of step names to colors.
 var colors = {
-  //   home: '#5687d1',
-  //   product: '#7b615c',
-  //   search: '#de783b',
-  //   account: '#6ab975',
-  //   other: '#a173d1',
-  //   end: '#bbbbbb',
-  //   TEST: 'pink',
-  //   F8B195   F67280   C06C84   6C5B7B   355C7D
-  superiores: 'F8B195',
-  fueraDeNivelHombres: 'F67280',
-  fueraDeNivelMujeres: 'F67270',
-  altaDireccion: 'C06C84',
-  noDirectivo: '6C5B7B',
-  mujeres: 'pink',
-  hombres: 'blue',
+  // home: '#5687d1',
+  // product: '#7b615c',
+  // search: '#de783b',
+  // account: '#6ab975',
+  // other: '#a173d1',
+  // end: '#bbbbbb',
+  // TEST: 'pink',
+  // //   F8B195   F67280   C06C84   6C5B7B   355C7D
+  // superiores: 'F8B195',
+  hombres: 'F67280',
+  mujeres: 'F67270',
+  ministerio2: 'C06C84',
+  ministerio3: '6C5B7B',
+  // mujeres: 'pink',
+  // hombres: 'blue',
 }
 
 // Total size of all segments; we set this later, after loading the data.

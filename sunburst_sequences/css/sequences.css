@@ -19,7 +19,7 @@ body {
 }
 
 #sequence {
-  width: 600px;
+  width: 1000px;
   height: 70px;
 }
 
@@ -29,7 +29,7 @@ body {
 
 #sequence text,
 #legend text {
-  font-weight: 600;
+  font-weight: 200;
   fill: #fff;
 }
 
@@ -52,5 +52,5 @@ body {
 }
 
 #percentage {
-  font-size: 2.5em;
+  font-size: 4em;
 }
