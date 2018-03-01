@@ -10,9 +10,10 @@ img {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 1400px;
+  height: 1500px;
   justify-content: space-around;
   align-items: space-around;
+  margin-top: 100px;
 }
 
 .row {
@@ -21,6 +22,7 @@ img {
   justify-content: space-around;
   width: 100vw;
   flex-wrap: nowrap;
+  margin-bottom: 400px;
 }
 
 .card {
@@ -34,6 +36,7 @@ img {
 
 .card:hover {
   transform: scale(1.02);
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
 }
 
 .btn {
@@ -49,4 +52,9 @@ img {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }

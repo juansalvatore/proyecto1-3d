@@ -90,7 +90,7 @@
             var title = svg.append("text")
                 .attr("class", "title")
                 .attr("dy", ".41em")
-                .text(2018);
+                .text();
 
             d3.csv("population.csv", function (error, data) {
 
@@ -148,6 +148,7 @@
                     .text(function (birthyear) { return birthyear; });
 
                 // Add labels to show age (separate; not animated).
+                // cada cuantos años muestra
                 svg.selectAll(".age")
                     .data(d3.range(0, age1 + 1, 5))
                     .enter().append("text")
@@ -171,7 +172,8 @@
                     if (!(year in data)) return;
                     title.text(year);
 
-                    birthyears.transition()
+                    birthyears
+                        .transition()
                         .duration(750)
                         .attr("transform", "translate(" + (x(year1) - x(year)) + ",0)");
 
