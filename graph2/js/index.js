@@ -10,19 +10,19 @@ var treeData = {
     {
       name: 'Fuera de Nivel',
       children: [
-        { name: '27% de mujeres' },
-        { name: '83% de hombres' },
+        { name: '27% mujeres' },
+        { name: '83% hombres' },
         {
           name: 'Alta Dirección',
           children: [
-            { name: '42% de mujeres' },
-            { name: '48% de hombres' },
+            { name: '42% mujeres' },
+            { name: '48% hombres' },
             {
               name: 'No Directivo',
               children: [
-                { name: '36%% de mujeres' },
+                { name: '36% mujeres' },
                 {
-                  name: '64% de hombres',
+                  name: '64% hombres',
                 },
               ],
             },
