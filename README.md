@@ -11,6 +11,8 @@
 
 - [x] Better style to index, add scrollmagic for animation.
 
+- [x] Add three aditional graphics, more simple to read the information.
+
 
 # 
 
@@ -56,4 +58,5 @@
 
 - [x] Gráfico 9
 <img src="https://image.ibb.co/nJHx57/graph9.png" alt="graph9" border="0">
+
 # 
