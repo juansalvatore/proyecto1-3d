@@ -10,7 +10,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 1900px;
+  height: 2200px;
   justify-content: space-around;
   align-items: space-around;
   margin-top: 100px;
@@ -31,8 +31,13 @@ img {
   margin-top: 50px;
 }
 
+.rowThree {
+  opacity: 0 !important;
+  margin-top: 50px;
+}
+
 .fade-in {
-  opacity: 1;
+  opacity: 1 !important;
   margin-top: 0;
 }
 
@@ -71,9 +76,6 @@ img {
 }
 
 @media (max-width: 1040px) {
-  .btn {
-    width: 50%;
-  }
   .row {
     flex-wrap: wrap;
   }
