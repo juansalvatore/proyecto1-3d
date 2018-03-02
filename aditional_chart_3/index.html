@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div id="container" style="min-width:400px;height:400px"></div>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+
+        <script>
+            var highlighatIndex = null;
+            var chart = Highcharts.chart('container', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: 'Hombres y mujeres'
+                },
+                xAxis: {
+                    categories: ['Ministerio 1', 'Ministerio 2', 'Ministerio 3', 'Ministerio 4', 'Ministerio 5', 'Ministerio 6']
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Total de puestos de trabajo'
+                    }
+                }, credits: {
+                    enabled: false
+                },
+                tooltip: {
+                    pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+                    shared: true
+                },
+                plotOptions: {
+                    column: {
+                        stacking: 'percent',
+                        allowPointSelect: true,
+                        dataLabels: {
+                            enabled: true,
+                            //format: '{percentage:.1f} %'
+                            formatter: function () {
+                                // console.log(this.point)
+                                if (this.series.index != highlighatIndex) {
+                                    return '';
+                                }
+                                return (this.percentage).toFixed(2) + '%';
+                            }
+                        }
+                    },
+                    series: {
+                        point: {
+                            events: {
+                                click: function () {
+                                    // console.log(this);
+                                    highlighatIndex = this.series.index;
+                                    console.log(this.series.index);
+                                    chart.update({});
+                                }
+
+                            }
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Mujeres',
+                    data: [5, 3, 4, 7, 2, 5],
+                    color: '#ccc'
+                }, {
+                    name: 'Hombres',
+                    data: [5, 4, 4, 2, 5, 3]
+                }]
+            });
+        </script>
+    </body>
+
+</html>
