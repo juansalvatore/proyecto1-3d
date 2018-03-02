@@ -10,7 +10,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 1500px;
+  height: 1900px;
   justify-content: space-around;
   align-items: space-around;
   margin-top: 100px;
@@ -23,6 +23,17 @@ img {
   width: 100vw;
   flex-wrap: nowrap;
   margin-bottom: 400px;
+  transition: all ease-in-out 300ms;
+}
+
+.rowTwo {
+  opacity: 0;
+  margin-top: 50px;
+}
+
+.fade-in {
+  opacity: 1;
+  margin-top: 0;
 }
 
 .card {
@@ -57,4 +68,20 @@ img {
 .card-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+}
+
+@media (max-width: 1040px) {
+  .btn {
+    width: 50%;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+  .card {
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  .rowTwo {
+    margin-top: 650px;
+  }
 }
