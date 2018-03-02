@@ -43,3 +43,17 @@
 <img src="https://image.ibb.co/cKFC3H/graph6.png" alt="graph6" border="0">
 
 # 
+
+- [x] Gráfico 7
+<img src="https://image.ibb.co/dHDWXn/graph7.png" alt="graph7" border="0">
+
+# 
+
+- [x] Gráfico 8
+<img src="https://image.ibb.co/iMKMXn/graph8.png" alt="graph8" border="0">
+
+# 
+
+- [x] Gráfico 9
+<img src="https://image.ibb.co/nJHx57/graph9.png" alt="graph9" border="0">
+# 
