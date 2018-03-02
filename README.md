@@ -5,6 +5,13 @@
 
 - [ ] FIRST ASSIGNMENT: Friday 2/2/2018 
 
+- [x] Create six graph options to show the relation between men and woman.  
+
+- [x] Create an index displaying the different graphs.
+
+- [x] Better style to index, add scrollmagic for animation.
+
+
 # 
 
 - [x] Gráfico 1 
