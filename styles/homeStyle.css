@@ -6,13 +6,13 @@ img {
   height: 230px;
 }
 
-.container {
+body {
   display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 2200px;
-  justify-content: space-around;
-  align-items: space-around;
+  justify-content: center;
+}
+
+.container {
+  width: 1500px;
   margin-top: 100px;
 }
 
@@ -42,12 +42,13 @@ img {
 }
 
 .card {
-  overflow: scroll;
-  height: 100% !important;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   transition: all ease-in-out 200ms;
   font-family: helvetica;
+  float: left;
+  margin-left: 40px;
+  margin-top: 20px;
 }
 
 .card:hover {
@@ -75,15 +76,17 @@ img {
   font-weight: 700;
 }
 
-@media (max-width: 1040px) {
-  .row {
+@media (max-width: 1390px) {
+  .container {
+    width: 1000px;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
+}
+
+@media (max-width: 710px) {
   .card {
-    margin-top: 20px;
-    margin-left: 30px;
-  }
-  .rowTwo {
-    margin-top: 650px;
+    margin-left: 0px;
   }
 }

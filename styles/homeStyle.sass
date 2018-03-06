@@ -4,14 +4,14 @@
 img 
     height: 230px
 
-.container  
+body 
     display: flex
-    flex-direction: column
-    width: 100vw
-    height: 2200px
-    justify-content: space-around
-    align-items: space-around
+    justify-content: center
+
+.container  
+    width: 1500px
     margin-top: 100px
+    
 
 .row
     display: flex
@@ -35,13 +35,14 @@ img
     margin-top: 0
 
 .card
-    overflow: scroll
-    height: 100% !important
     box-shadow: 0px 0px 15px rgba(0,0,0,0.2)
     border-radius: 5px
     transition: all ease-in-out 200ms
     font-family: helvetica
-
+    float: left
+    margin:
+        left: 40px
+        top: 20px
     &:hover
         transform: scale(1.02)
         box-shadow: 0px 5px 30px rgba(0,0,0,0.2)
@@ -63,15 +64,14 @@ img
     font-family: 'Montserrat', sans-serif;
     font-weight: 700
 
-@media (max-width: 1040px)
-    .row
+@media (max-width: 1390px)
+    .container
+        width: 1000px
+        display: flex
         flex-wrap: wrap
-
-    .card
-        margin-top: 20px
-        margin-left: 30px
-
-    .rowTwo
-        margin-top: 650px
-
+        justify-content: center
     
+@media (max-width: 710px)
+    .card
+        margin-left: 0px
+
