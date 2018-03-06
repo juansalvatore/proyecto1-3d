@@ -8,7 +8,7 @@ $(document).ready(function() {
       triggerElement: this,
       //duration: '90%',
       reverse: true,
-      triggerHook: 0.64,
+      triggerHook: 0.8,
     })
       .setClassToggle(this, 'fade-in') // add class to #img-1
       // .addIndicators({
